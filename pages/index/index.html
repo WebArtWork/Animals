@@ -1,0 +1,25 @@
+
+{% for product in products %}
+<a href="/product/{{{product.id}}}">
+	<h1>{{{product.name}}}</h1>
+	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
+</a>
+{% endfor %}
+{% for service in services %}
+<a href="/service/{{{service.id}}}">
+	<h1>{{{service.name}}}</h1>
+	<img src="{{{service.thumb}}}" alt="{{{service.name}}}">
+</a>
+{% endfor %}
+{% for profile in profiles %}
+<a href="/profile/{{{profile.id}}}">
+	<h1>{{{profile.name}}}</h1>
+	<img src="{{{profile.thumb}}}" alt="{{{profile.name}}}">
+</a>
+{% endfor %}
+{% for article in articles %}
+<a href="/article/{{{article.id}}}">
+	<h1>{{{article.name}}}</h1>
+	<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
+</a>
+{% endfor %}
